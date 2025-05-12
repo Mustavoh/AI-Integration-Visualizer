@@ -32,7 +32,8 @@ export default function AIDecisionVisualizer() {
 
       // Clean and process the response
       const cleanResponse = result.text.trim().toUpperCase()
-      setResponse(result.text)
+      // Only set response for error cases
+      // setResponse(result.text);
 
       // Determine if the response is YES or NO
       if (cleanResponse.includes("YES")) {
@@ -41,7 +42,7 @@ export default function AIDecisionVisualizer() {
         setDecision("NO")
       } else {
         // If the response doesn't clearly contain YES or NO
-        setResponse(`${result.text} (Unable to determine a clear YES/NO answer)`)
+        setResponse("Unable to determine a clear YES/NO answer")
       }
     } catch (error) {
       console.error("Error getting AI response:", error)
@@ -72,11 +73,11 @@ export default function AIDecisionVisualizer() {
 
         <InputContainer onSubmit={handleSubmit} isLoading={loading} />
 
-        {response && (
+        {response && response.includes("Error") && (
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="font-mono text-lg text-center text-white/90"
+            className="font-mono text-lg text-center text-red-400"
           >
             {response}
           </motion.div>
