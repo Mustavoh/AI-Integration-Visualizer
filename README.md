@@ -1,30 +1,42 @@
-# Modern React App
+# AI Decision Visualizer
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+![AI Decision Visualizer](https://placeholder.svg?height=400&width=800&query=AI%20Decision%20Visualizer%20with%20glowing%20yes%20no%20boxes)
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/mustavohs-projects/v0-modern-react-app)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/bHwR0Nrl3XP)
+## Let AI Make Your Decisions
 
-## Overview
+This app shows how AI can control parts of your program with simple yes/no choices. Ask any question, and watch as the AI thinks and lights up its answer.
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+## What It Does
 
-## Deployment
-
-Your project is live at:
-
-**[https://vercel.com/mustavohs-projects/v0-modern-react-app](https://vercel.com/mustavohs-projects/v0-modern-react-app)**
-
-## Build your app
-
-Continue building your app on:
-
-**[https://v0.dev/chat/projects/bHwR0Nrl3XP](https://v0.dev/chat/projects/bHwR0Nrl3XP)**
+- Ask any yes/no question in the text box
+- AI processes your question
+- Visual feedback shows the answer (red for NO, green for YES)
+- Cool particle background adds visual interest
 
 ## How It Works
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+The app sends your question to an AI (Groq) and tells it to only answer YES or NO. When the answer comes back, the app lights up the matching box to show you the result.
+
+## Quick Start
+
+1. Clone the repo
+2. Run `npm install`
+3. Set up your Groq API key
+4. Run `npm run dev`
+5. Ask away!
+
+## Built With
+
+- Next.js
+- React
+- Framer Motion
+- Tailwind CSS
+- Groq AI
+
+## Why It's Cool
+
+Instead of just showing text, this app uses visual cues (glowing boxes) to display AI decisions. This same idea can work for any program where you want AI to make simple choices.
+
+---
+
+Made by Mustafa Aljishi | [Portfolio](https://datah4wk.vercel.app) | [LinkedIn](https://linkedin.com/in/datah4wk)
