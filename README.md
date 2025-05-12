@@ -1,6 +1,7 @@
 # AI Decision Visualizer
 
-![AI Decision Visualizer](https://placeholder.svg?height=400&width=800&query=AI%20Decision%20Visualizer%20with%20glowing%20yes%20no%20boxes)
+You can test it yourself here :)
+https://integrationofai.vercel.app/
 
 ## Let AI Make Your Decisions
 
